@@ -35,6 +35,14 @@ public class Main {
          * Author: Mary Wu
          * Date: 9/10/2020
          **/
+        /*
+            Comments
+            --------
+            Mary - good work here. Only issue is you were meant to calculate the number of days, not
+            just print it out.
+
+            A-, 9/10
+         */
         //type in "Mary" please
         Scanner myScanner1 = new Scanner(System.in);
         String myScannedInput1 = myScanner1.nextLine();
@@ -48,6 +56,9 @@ public class Main {
         //type in "15" please
         Scanner myScanner3 = new Scanner(System.in);
         String myScannedInput3 = myScanner3.nextLine();
+        /*
+        FIXME: The goal here is to CALCULATE the number of days (i.e. years * 365)
+         */
         System.out.println("I'm "+myScannedInput3+" and I lived for 5525 days.");
 
 
@@ -65,11 +76,13 @@ public class Main {
         //Problem II
         String myStringhello = "Hello ";
         String myStringworld = "World";
-        System.out.format(myStringhello);
+        System.out.format(myStringhello); // FIXME: would prefer you used .print() here
         System.out.format(myStringworld);
 
         //Problem III
         //type in which year you were born please
+        // FIXME: This doesn't follow the instructions.
+        // FIXME: Your goal is to print out the TYPE of variable that that the user entered
         Scanner myScannerage = new Scanner(System.in);
         int myScannedInputage = myScannerage.nextInt();
         int counter = 2020;
@@ -108,6 +121,9 @@ public class Main {
         // ==================
         //Problem VI
         //type in which year you were born please
+        /*
+         +1
+         */
         Scanner myScannerage5 = new Scanner(System.in);
         int myScannedInputage2 = myScannerage5.nextInt();
         int counter2 = 2020;
@@ -115,6 +131,8 @@ public class Main {
         System.out.println("You are "+counter2+" years old in 5 years.");
 
         //Problem VII
+        // +.5
+        // FIXME: you need to ADD all numbers first, then divide by two
         System.out.println("Type in your first number please.");
         double number = 2;
         Scanner myScannernumber1 = new Scanner(System.in);
@@ -133,6 +151,7 @@ public class Main {
         System.out.println(counter1);
 
         //Problem VIII
+        // +1
         System.out.println("Guess my name, you have 3 chances.");
         String Name3;
         Scanner readName3 = new Scanner(System.in);
@@ -140,6 +159,7 @@ public class Main {
         if(Name3.equals("Mary")){
             System.out.println("You got it!");
         }else{
+            // NICE! i like how you showed them their incorrect guess
             System.out.println(Name3+" is not my name, please try again.");
         }
         String Name4;
@@ -160,12 +180,14 @@ public class Main {
         }
 
         //Problem IX
+        // +1 awesome
         File readmeFile = new File("resources/readme.txt");
         Scanner scannerFile = new Scanner(readmeFile);
         String myscannerFile2 = scannerFile.nextLine();
         System.out.println(myscannerFile2);
 
         //Problem X
+        // +2 SUPER impressed w/ your diligence on this problem
         Scanner myScanner = new Scanner(System.in);
         String wholeNumber = myScanner.nextLine();
         int firstNumber = Character.getNumericValue(wholeNumber.charAt(0));
